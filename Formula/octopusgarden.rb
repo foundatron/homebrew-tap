@@ -5,21 +5,21 @@
 class Octopusgarden < Formula
   desc "Autonomous software dark factory: specs to working code via attractor loop"
   homepage "https://github.com/foundatron/octopusgarden"
-  version "2.71.0"
+  version "2.71.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/foundatron/octopusgarden/releases/download/v2.71.0/octopusgarden_2.71.0_darwin_amd64.tar.gz"
-      sha256 "56595a081720d6bd48f74954b023feaacf6965416dc42523bdf0ba0e048ac0c6"
+      url "https://github.com/foundatron/octopusgarden/releases/download/v2.71.1/octopusgarden_2.71.1_darwin_amd64.tar.gz"
+      sha256 "c8e9baadb15134ee823c458320a84440cb763ece51b228c630ed2052f618100b"
 
       define_method(:install) do
         bin.install "octog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/foundatron/octopusgarden/releases/download/v2.71.0/octopusgarden_2.71.0_darwin_arm64.tar.gz"
-      sha256 "da7280e1b6413b3705504216e9a5c959a9790d06be7dc20094a23b71ba9a2c7d"
+      url "https://github.com/foundatron/octopusgarden/releases/download/v2.71.1/octopusgarden_2.71.1_darwin_arm64.tar.gz"
+      sha256 "64ee4c0bb9db6cf1ee0388ddd744dcd09a14c508cc698a1cde5397bdbb84f945"
 
       define_method(:install) do
         bin.install "octog"
@@ -29,15 +29,15 @@ class Octopusgarden < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/foundatron/octopusgarden/releases/download/v2.71.0/octopusgarden_2.71.0_linux_amd64.tar.gz"
-      sha256 "ba4fd382120fc29f0f061af707d4fe848f71fdade6c350732b8d509a2779f225"
+      url "https://github.com/foundatron/octopusgarden/releases/download/v2.71.1/octopusgarden_2.71.1_linux_amd64.tar.gz"
+      sha256 "856faf33841f359633dee0f34ee73046ead5aa5d1fc7536ecc2ab1bd6d138b86"
       define_method(:install) do
         bin.install "octog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/foundatron/octopusgarden/releases/download/v2.71.0/octopusgarden_2.71.0_linux_arm64.tar.gz"
-      sha256 "521cc0e17437cc3ef204900d78dde4392e3b3422a5879dc9e1b4706d03230390"
+      url "https://github.com/foundatron/octopusgarden/releases/download/v2.71.1/octopusgarden_2.71.1_linux_arm64.tar.gz"
+      sha256 "93d21cbea8a8fb4d3125c5d55f3e7626446b2763ebeb2c90b201b233fb677047"
       define_method(:install) do
         bin.install "octog"
       end
